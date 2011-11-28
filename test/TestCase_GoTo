@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<title>Test Case : Go To</title>
+<link rel="selenium.base" href="https://github.com/" />
+<body>
+</head>
+<body>
+<tr><td rowspan="1" colspan="3">Test Case : Go To</td></tr>
+</thead><tbody>
+
+
+<tr>
+	<td>label</td>
+	<td>* ! * ! * ! * ! * ! * ! * ! * ! * ! * ! * !</td>
+	<td></td>
+</tr>
+<tr>
+	<td>skipNext</td>
+	<td>1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getEval</td>
+	<td>LOG.info(&quot;this will NOT execute&quot;);</td>
+	<td></td>
+</tr>
+<tr>
+	<td>skipNext</td>
+	<td>0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getEval</td>
+	<td>LOG.info(&quot;this WILL execute&quot;);</td>
+	<td></td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>HERE</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getEval</td>
+	<td>LOG.info(&quot;this will NOT execute&quot;);</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>HERE</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>true</td>
+	<td>THERE</td>
+</tr>
+<tr>
+	<td>getEval</td>
+	<td>LOG.info(&quot;this will NOT execute&quot;);</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>THERE</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>* ! * ! * ! * ! * ! * ! * ! * ! * ! * ! * !</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

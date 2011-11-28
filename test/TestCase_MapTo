@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<title>Test Case : Map To</title>
+<link rel="selenium.base" href="https://github.com/" />
+<body>
+</head>
+<body>
+<tr><td rowspan="1" colspan="3">Test Case : Map To</td></tr>
+</thead><tbody>
+
+<tr>
+	<td>label</td>
+	<td>* ! * ! * ! * ! * ! * ! * ! * ! * ! * ! * !</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>&quot;['dogbert','ratbert']&quot;</td>
+	<td>Purchasers</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>&quot;['justin','wally']&quot;</td>
+	<td>SalesTeam</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>&quot;ratbert&quot;</td>
+	<td>employee</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${employee}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>- - - - - - - - - - - - - - - - - - - - - - - - - -</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>&quot;${employee}&quot;.mapTo(&quot;Purchasing&quot;, ${Purchasers}, &quot;Sales&quot;, ${SalesTeam})</td>
+	<td>ABC</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${ABC}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>&quot;wally&quot;</td>
+	<td>employee</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${employee}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>&quot;${employee}&quot;.mapTo(&quot;Purchasing&quot;, [&quot;dogbert&quot;,&quot;ratbert&quot;], &quot;Sales&quot;, ${SalesTeam})</td>
+	<td>DEF</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${DEF}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>* ! * ! * ! * ! * ! * ! * ! * ! * ! * ! * !</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

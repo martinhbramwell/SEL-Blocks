@@ -1,0 +1,5 @@
+  <testdata>
+    <vars userid="dilbert" role="superuser" />
+    <vars userid="wally"   role="lazyuser" />
+  </testdata>
+
