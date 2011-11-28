@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<title>Test Case : XML Loop</title>
+<link rel="selenium.base" href="https://github.com/" />
+<body>
+</head>
+<body>
+<tr><td rowspan="1" colspan="3">Test Case : XML Loop</td></tr>
+</thead><tbody>
+
+
+<tr>
+	<td>label</td>
+	<td>* ! * ! * ! * ! * ! * ! * ! * ! * ! * ! * !</td>
+	<td></td>
+</tr>
+<tr>
+	<td>loadVars</td>
+	<td>varset.xml</td>
+	<td>userid==&quot;wally&quot;</td>
+</tr>
+<tr>
+	<td>getEval</td>
+	<td>LOG.info(&quot;${role}&quot;);</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>- - - - - - - - - - - - - - - - - - - - - - - - - -</td>
+	<td></td>
+</tr>
+<tr>
+	<td>forXml</td>
+	<td>varset.xml</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getEval</td>
+	<td>LOG.info(&quot;${userid}: ${role}&quot;);</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endForXml</td>
+	<td>--- End For XML ---</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>* ! * ! * ! * ! * ! * ! * ! * ! * ! * ! * !</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
