@@ -1,5 +1,5 @@
 <json>
-{"nameCategory" : "Radiators",   "parentCategory" : "All products"}
-{"nameCategory" : "Petunias",   "parentCategory" : "Fake products"}
+{"stuff" : "'Cows', 'Cats', 'Camels'"}
+{"stuff" : "'Dogs', 'Ducks', 'Donkeys'"}
 </json>
 

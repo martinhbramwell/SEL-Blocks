@@ -32,12 +32,12 @@
 </tr>
 <tr>
 	<td>for</td>
-	<td>jj=0; jj &lt;= 2; jj++</td>
-	<td>jj</td>
+	<td>Index=0; Index &lt;= 2; Index++</td>
+	<td>Index</td>
 </tr>
 <tr>
 	<td>storeEval</td>
-	<td>storedVars[&quot;aryStuff&quot;][${jj}]</td>
+	<td>storedVars[&quot;aryStuff&quot;][${Index}]</td>
 	<td>StuffElement</td>
 </tr>
 <tr>
