@@ -8,8 +8,7 @@
 </head>
 <body>
 <tr><td rowspan="1" colspan="3">Test Case : JSON Loop</td></tr>
-</thead><tbody>
-
+</thead><tbody><table>
 
 <tr>
 	<td>label</td>
@@ -22,18 +21,33 @@
 	<td></td>
 </tr>
 <tr>
-	<td>getEval</td>
-	<td>LOG.info(&quot;${parentCategory}: ${nameCategory}&quot;);</td>
-	<td></td>
-</tr>
-<tr>
 	<td>storeEval</td>
-	<td>&quot;${parentCategory}&quot;</td>
-	<td>ABC</td>
+	<td>eval(&quot;new Array(&quot; + storedVars['stuff'] + &quot;)&quot;);</td>
+	<td>aryStuff</td>
 </tr>
 <tr>
 	<td>echo</td>
-	<td>${ABC}</td>
+	<td>${aryStuff}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>for</td>
+	<td>jj=0; jj &lt;= 2; jj++</td>
+	<td>jj</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars[&quot;aryStuff&quot;][${jj}]</td>
+	<td>StuffElement</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${StuffElement}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endFor</td>
+	<td>--- End For ---</td>
 	<td></td>
 </tr>
 <tr>

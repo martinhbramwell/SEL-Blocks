@@ -8,7 +8,7 @@
 </head>
 <body>
 <tr><td rowspan="1" colspan="3">Test Case : Map To</td></tr>
-</thead><tbody>
+</thead><tbody><table>
 
 <tr>
 	<td>label</td>

@@ -8,7 +8,7 @@
 </head>
 <body>
 <tr><td rowspan="1" colspan="3">Test Case : XML Loop</td></tr>
-</thead><tbody>
+</thead><tbody><table>
 
 
 <tr>

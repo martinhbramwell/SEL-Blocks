@@ -8,9 +8,7 @@
 </head>
 <body>
 <tr><td rowspan="1" colspan="3">Test Case : For Loop</td></tr>
-</thead><tbody>
-
-</thead><tbody>
+</thead><tbody><table>
 
 <tr>
 	<td>label</td>
