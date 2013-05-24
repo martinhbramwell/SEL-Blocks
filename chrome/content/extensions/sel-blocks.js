@@ -1,4 +1,3 @@
-
 /**
  * SelBlocks 1.3
  *
@@ -489,7 +488,7 @@ Selenium.prototype.doLoadVars = function(xmlfile, selector)
 
   var result = evalWithVars(selector);
   if (typeof result != "boolean")
-    aLOG.warn(fmtCmdRef(hereIdx()) + ", " + selector + " is not a boolean expression");
+    LOG.warn(fmtCmdRef(hereIdx()) + ", " + selector + " is not a boolean expression");
 
   // read until specified set found
   var isEof = xmlReader.EOF();
@@ -860,7 +859,7 @@ function XmlReader()
     }
   }
 }
-
+var XML = {};
 XML.serialize = function(node) {
   if (typeof XMLSerializer != "undefined")
     return (new XMLSerializer()).serializeToString(node) ;
