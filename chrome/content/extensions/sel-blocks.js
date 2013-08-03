@@ -8,7 +8,8 @@
  *   (not "Selenium IDE extensions", because we are accessing the Selenium object)
  *
  * Features:
- *  - Commands: if/else, loadVars, forXml, forJson, foreach, for, while, call/script/return
+ *  - Commands: if/else, loadVars, loadJsonVars, forXml, forJson, foreach, for, 
+ *    while, call/script/return
  *  - Script and loop parameters use regular selenium variables that are local to the block,
  *    overriding variables of the same name, and are restored when the block exits.
  *  - Variables can be set via external XML file(s).
@@ -289,7 +290,7 @@ function compileSelBlocks()
           cmdAttrs.init(i, { hdrIdx: hdrAttrs.idx }); // footer -> header
           break;
 
-        case "loadVars":
+        case "loadVars": case "loadJsonVars": 
           assertNotAndWaitSuffix(i);
           break;
 
@@ -525,6 +526,19 @@ Selenium.prototype.doEndForXml = function() {
   iterateLoop();
 }
 
+// ================================================================================
+Selenium.prototype.doLoadJsonVars = function(jsonFile, selector)
+{
+  assert(jsonFile, " 'loadJsonVars' requires a JSON file path or URI.");
+  var jsonReader = new JSONReader(jsonFile);
+  jsonReader.load(jsonFile);
+  
+  var isEof = jsonReader.EOF();
+  while (!isEof) {
+    jsonReader.next(); // read all and set values on storedVars
+    isEof = jsonReader.EOF();
+  } 
+}
 
 // ================================================================================
 Selenium.prototype.doForJson = function(jsonpath)
@@ -999,9 +1013,9 @@ function JSONReader()
       return;
     }
     varsElementIdx++;
-  	LOG.debug(JSON.stringify(varNodes[curVars]));	// log each name & value
-
-    storedVars = varNodes[curVars];
+  	key = Object.keys(varNodes[curVars]);
+    storedVars[key] = varNodes[curVars][key];
+//    storedVars = varNodes[curVars];  // Bad idea to overwrite storedVars
     curVars++;
   }
 

@@ -8,6 +8,7 @@
 <body>
 <table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
 <tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="TestCase_JSONVariable">JSON variable</a></td></tr>
 <tr><td><a href="TestCase_ForEachLoop">For Each Loop</a></td></tr>
 <tr><td><a href="TestCase_ForLoop">For Loop</a></td></tr>
 <tr><td><a href="TestCase_WhileLoop">While Loops</a></td></tr>

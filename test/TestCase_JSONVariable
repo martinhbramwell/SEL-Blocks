@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<title>Test Case : JSON Loop</title>
+<link rel="selenium.base" href="https://github.com/" />
+<body>
+</head>
+<body>
+<tr><td rowspan="1" colspan="3">Test Case : JSON Loop</td></tr>
+</thead><tbody><table>
+
+<tr>
+	<td>label</td>
+	<td>* ! * ! * ! * ! * ! * ! * ! * ! * ! * ! * !</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>ThisMustSurviveTheCallToLoadJsonVars</td>
+	<td>Check_This</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Check_This}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>loadJsonVars</td>
+	<td>varset.json</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Check_This}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['servername']</td>
+	<td>servername</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${servername}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['projectname']</td>
+	<td>projectName</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${projectName}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>* ! * ! * ! * ! * ! * ! * ! * ! * ! * ! * !</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,5 +1,8 @@
 <json>
 {"stuff" : "'Cows', 'Cats', 'Camels'"}
 {"stuff" : "'Dogs', 'Ducks', 'Donkeys'"}
+{"stuff" : "'Ears', 'Noses', 'Tails'"}
+{"projectname": "Warehouseman"}
+{"servername": "warehouseman.net"}
 </json>
 
