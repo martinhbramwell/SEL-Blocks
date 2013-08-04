@@ -1,6 +1,8 @@
 #!/bin/bash
 
-APP_NAME=SELBlocks  # short-name, jar and xpi files name. Must be lowercase with no spaces
+find . -name "*~" -print0 | xargs -0 rm -rf
+
+APP_NAME=sel-blocks_1.3.1a@chris.noe  # short-name, jar and xpi files name. Must be lowercase with no spaces
 mkdir build
 cp -R *.sh ./build
 cp -R *.rdf ./build
