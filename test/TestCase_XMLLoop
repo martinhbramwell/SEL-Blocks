@@ -17,21 +17,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>loadVars</td>
-	<td>varset.xml</td>
-	<td>userid==&quot;wally&quot;</td>
-</tr>
-<tr>
-	<td>getEval</td>
-	<td>LOG.info(&quot;${role}&quot;);</td>
-	<td></td>
-</tr>
-<tr>
-	<td>label</td>
-	<td>- - - - - - - - - - - - - - - - - - - - - - - - - -</td>
-	<td></td>
-</tr>
-<tr>
 	<td>forXml</td>
 	<td>varset.xml</td>
 	<td></td>
